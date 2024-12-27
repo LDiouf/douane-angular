@@ -1,0 +1,26 @@
+<h4 class="center" style="background-color: #f2f2f2; box-shadow: 3px 3px 5px #888888;">LISTE DES EMPLOYES</h4>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th> UserName</th>
+            <th> Password </th>
+            <th>Actions</th>
+            <button class="btn-success"><a href="agent">Add-User</a></button>
+            <button class="btn-success"><a href="direction">Accueil</a></button>
+            <button class="btn-success"><a href="comment">Commentaire</a></button>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor = "let user of users" >
+            <td> {{user.id }} </td>
+            <td> {{ user.username }} </td>
+            <td> {{ user.password }} </td>
+            <td>
+                <button (click) = "updateEmployee(user.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteEmployee(user.id)" class="waves-effect waves-light btn red m2" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

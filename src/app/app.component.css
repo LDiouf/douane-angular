@@ -1,0 +1,20 @@
+.custom-navbar {
+    height: 100px; /* Ajustez la hauteur selon vos besoins */
+  }
+
+
+  .divider-short {
+    text-align: center;
+    width: 450px; /* Ajustez la largeur selon vos besoins */
+    margin: 0 auto; /* Pour centrer horizontalement le trait */
+    border-color: #000; /* Couleur du trait (noir dans cet exemple) */
+  }
+
+  .logo-text {
+    text-align: center;
+    width: 110px; /* La même largeur que l'image */
+    margin-top: 0px; /* Ajoutez une marge pour espacer le texte de l'image */
+  }
+  
+  
+  

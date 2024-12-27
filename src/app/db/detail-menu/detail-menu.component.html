@@ -1,0 +1,33 @@
+<div *ngIf="douane" class="row">
+    <div class="col s12 m8 offset-m2">
+    <h2 class="header center">{{ douane.name }}</h2>
+    <div class="card horizontal hoverable">
+      <!--<div class="card-image">
+        <img [src]="douane.picture">
+      </div> -->
+      <div class="card-stacked">
+        <div class="card-content">
+          <table class="bordered striped">
+            <tbody>
+              <tr>
+                <td>Nom</td>
+                <td><strong>{{ douane.name }}</strong></td>
+              </tr>
+              <tr>
+                <td>Date du jour</td>
+                <td><em>{{ douane.created | date:"dd/MM/yyyy" }}</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-action center-align">
+            <a (click)="goToDirection()" class="waves-effect waves-light btn m2">Retour</a>
+            <a (click)="goToDirection()" class="waves-effect waves-light btn ml2 mr2" style="margin-left: 10px; margin-right: 10px;">Retour</a>
+            <a (click)="goToDirection()" class="waves-effect waves-light btn m2">Retour</a>
+          </div>          
+      </div>
+    </div>
+    </div>
+    </div>
+    <h4 *ngIf='!douane' class="center">Aucun menu à afficher !</h4>
+

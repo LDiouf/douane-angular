@@ -1,0 +1,77 @@
+
+<!--<div class="container">
+    <div class="row">
+        <div *ngFor="let douane of tolaList" class="col m4 s6">
+            <div (click)="goToDouane(douane)" class="card horizontal" tolaBorderCard>
+                <div class="card-image">
+                    <img [src]="douane.picture" />
+                </div>
+                <div class="card-stocked">
+                    <div class="card-content">
+                        <p>{{douane.name}}</p>
+                        <p><small>{{douane.created | date:"dd/MM/yy"}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> !-->
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m4">
+            <div (click)="goToMarche()" class="card " tolaBorderCard>
+                <div class="card-content">                    
+                </div>
+                <div class="card-content center teal lighten-2">              
+                    <p style="font-weight: bold;">Dossier de Marches publics</p>                    
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div (click)="goToComptable()" class="card #fafafa grey lighten-5" tolaBorderCard>
+                <div class="card-content">                    
+                </div>
+                <div class="card-content center teal lighten-2">              
+                    <p style="font-weight: bold;">Engagement Comptable</p>                    
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div (click)="goToLiquidation()" class="card" tolaBorderCard>
+                <div class="card-content">                    
+                </div>
+                <div class="card-content center teal lighten-2">              
+                    <p style="font-weight: bold;">Dossiers de Liquidation</p>                    
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div (click)="goToJuridique()" class="card" tolaBorderCard>
+                <div class="card-content">                    
+                </div>
+                <div class="card-content center teal lighten-2">              
+                    <p style="font-weight: bold;">Engagement Juridique</p>                    
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div (click)="goToOrdonnancement()" class="card" tolaBorderCard>
+                <div class="card-content">                    
+                </div>
+                <div class="card-content center teal lighten-2">              
+                    <p style="font-weight: bold;">Mandats Ordonnancement</p>                    
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div (click)="goToConsultation()" class="card" tolaBorderCard>
+                <div class="card-content">                    
+                </div>
+                <div class="card-content center teal lighten-2">              
+                    <p style="font-weight: bold;">Consultation Edition</p>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

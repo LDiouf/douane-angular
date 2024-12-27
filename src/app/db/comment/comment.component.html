@@ -1,0 +1,26 @@
+<h4 class="center" style="background-color: #f2f2f2; box-shadow: 3px 3px 5px #888888;">LISTE DES COMMENTAIRES</h4>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th> LastName</th>
+            <th> Email </th>
+            <th>Comment</th>
+            <button class="btn-success"><a href="employes">Users-List</a></button>
+            <button class="btn-success"><a href="direction">Accueil</a></button>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor = "let information of informations" >
+            <td> {{information.firstName }} </td>
+            <td> {{ information.lastName }} </td>
+            <td> {{ information.email }} </td>
+            <td> {{ information.comment }} </td>
+            <td>
+                <button (click) = "deleteComment(information.id)" class="waves-effect waves-light btn red m2" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
